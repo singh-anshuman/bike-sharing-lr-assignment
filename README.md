@@ -23,12 +23,13 @@ Specifically, they want to understand the factors affecting the demand for these
 **Input Data** - Based on various meteorological surveys and people's styles, we are proided a large dataset on daily bike demands across the American market based on some factors.
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Based on the linear regression analysis done on the data set we can see that for the training data adjusted R-square comes to be .811 which means that the model is able to explain 81.1% variance in target variable cnt.
+- Using the same model for the test data set the adjusted R-square comes out to be .787 which is very close to .811 hence there is no overfitting present in the model.
+- On plotting a histogram of the error values considering the final model, we can see that the error distribution is a normal distribution with a mean a 0. Hence, we validated the assumptions of the linear regression model.
+- Looking at the coefficients of features selected in the final model we can see that these are the top 3 features contributing the most towards explaining the demand of shared bikes.
+1. atemp – Demand goes up as the feels like temperature goes up.
+2.	Year – The demand is increasing with time.
+3.	Weather Situation – There is negative correlation between demand and weather indicating that if the weather is bad (e.g. Heavy Rain, Ice Pallets, etc.) the demand goes down.
 
 ## Technologies Used
 * pandas
@@ -39,4 +40,4 @@ Specifically, they want to understand the factors affecting the demand for these
 * statsmodels
 
 ## Contact
-Created by [@githubusername]
+Created by [@singh-anshuman]
